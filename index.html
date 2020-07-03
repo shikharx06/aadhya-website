@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD  -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- FAVICON  -->
+    <link rel="icon" href="favicon.png" sizes="64x64" />
+
+    <!-- CSS AND OTHER BOOTSTRAP LINKS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/19302cf257.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LINKED CSS -->
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- TITLE  -->
+    <title>Aadhya - evolve . engage . elevate</title>
+  </head>
+
+  <!-- BODY CONTENT -->
+
+  <body style="margin:0;">
+    <div id="overlay"></div>
+    <!-- LOADER!! DO NOT DELETE!!! -->
+    <div id="myDiv">
+      <!-- NAVBAR      -->
+      <nav
+        class="navbar nav-masthead  navbar-expand-sm fixed-bottom animate-bottom"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsingNavbarLg"
+        >
+          <span class="navbar-toggler-icon">
+            <div id="hamburger"></div>
+          </span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbarLg">
+          <ul class="navbar-nav nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/guests.html">Speakers </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/hackathon.html">Hackathon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/passes.html">Passes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/sponsers.html"
+                >Collaborators</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/faq.html">Faq</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="components/teams.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/findus.html">Find us</a>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- LANDING PAGE -->
+      <!--REGISTER BUTTON  -->
+      <div class="top-buttons d-flex justify-content-between">
+        <div class="register-btn animate-bottom"></div>
+
+        <!-- SOUND BUTTON -->
+        <div class="audio-btn ">
+          <audio
+            id="myAudio"
+            loop
+            muted
+            <source
+            src="assets/LogonSound/bgm.mp3"
+            type="audio/mp4"
+          >
+            Your user agent does not support the HTML5 Audio element.
+          </audio>
+
+          <div class="audio-btn-container">
+            <p>Click here to see the magic 👉</p>
+            <button class="audio" type="button" onclick="aud_play_pause()">
+              <div id="audio-btn"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTRO (IMAGES)-->
+      <div class="intro">
+        <div id="logo" class=" animate-bottom">
+          <!-- <img src="assets/LogonSound/data.json" alt="aadhya_logo" width=100% /> -->
+        </div>
+        <div class="typewriter ">
+          evolve.engage.<span class="animate-bottom">elevate</span>
+        </div>
+        <div class="typewriter ">
+          <span class="animate-bottom">&nbsp28<sup>th</sup> </span>,
+          <span class="animate-bottom">&nbsp29<sup>th</sup> </span>&nbspFebruary
+          & <span class="animate-bottom">&nbsp1<sup>st</sup> </span>&nbspMarch
+        </div>
+      </div>
+      <br />
+
+      <div class="typewriter ">
+        thanks for being part of
+        <span class="animate-bottom bold">&nbspAadhya 2020</span> .
+      </div>
+      <div class="typewriter bold">
+        <span class="animate-bottom-1">1300+ participants,</span> &nbsp <span class="animate-bottom-2">54 events,</span> &nbsp <span class="animate-bottom-3">35+ prestigious speakers.</span>
+      </div>
+      <div class=" typewriter">
+        <a class="team-href" href="components/teams.html"
+          >click here to see the people behind it.
+        </a>
+      </div>
+    </div>
+
+    <!--SCRIPTS  -->
+
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- tilt js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <!-- countdown jsavascript -->
+    <script src="scripts/countdown.js"></script>
+
+    <!-- bodymovin js -->
+    <script src="scripts/lottie.js"></script>
+
+    <!-- index page functionality -->
+    <script src="scripts/index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap CDN -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

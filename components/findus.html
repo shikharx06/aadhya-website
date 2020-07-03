@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/findus.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+
+    <!--social logo-->
+    <script
+      src="https://kit.fontawesome.com/19302cf257.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FAVICON  -->
+    <link rel="icon" href="../favicon.png" sizes="64x64" />
+
+    <title>Aadhya - evolve . engage . elevate</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar nav-masthead navbar-expand-sm fixed-bottom animate-bottom"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsingNavbarLg"
+      >
+        <span class="navbar-toggler-icon">
+          <div id="hamburger"></div>
+        </span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbarLg">
+        <ul class="navbar-nav nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guests.html">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hackathon.html">Hackathon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="passes.html">Passes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsers.html">Collaborators</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="teams.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Find us</a>
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="site-section animate-bottom">
+      <div class="container animate-bottom">
+        <div class="row align-items-center">
+          <div class="mapContainer col-md-6 order-2 order-md-2 mb-md-0 ">
+            <a
+              class="direction-link"
+              target="_blank"
+              href="//maps.google.com/maps?f=d&amp;daddr=13.0183642,77.5078933&amp;hl=en"
+            >
+              Get Directions</a
+            >
+            <div id="map"></div>
+          </div>
+
+          <div class="col-md-6 mr-auto order-1 order-md-1 ">
+            <h1 class="section-title mb-3 animate-bottom">find us</h1>
+
+            <p class="mb-3">
+              need a hand? or maybe a high five? <br />Here's how to reach us.
+            </p>
+
+            <div class="row">
+              <span class="social ">
+                <a href="https://www.instagram.com/aadhya_ruas/" target="_blank"
+                  ><i id="instagram"></i
+                ></a>
+              </span>
+              <span class="social">
+                <a href="https://www.facebook.com/ruasAadhya" target="_blank"
+                  ><i id="facebook" aria-hidden="true"></i
+                ></a>
+              </span>
+              <span class="social ">
+                <a href="https://github.com/cynergy-ruas" target="_blank"
+                  ><i id="github"></i
+                ></a>
+              </span>
+              <span class="social">
+                <a href="https://www.linkedin.com/in/aadhyaruas" target="_blank"
+                  ><i id="linkedin"></i
+                ></a>
+              </span>
+            </div>
+
+            <div class="poc row">
+              <span class="col">
+                <img
+                  class="poc-img"
+                  src="https://image.flaticon.com/icons/svg/702/702004.svg"
+                  alt=""
+                />
+              </span>
+              <span class="poc-des">
+                <h5>
+                  <span class="blue">name:</span> Vivek Badani
+                  <span class="green">(management lead)</span>
+                </h5>
+
+                <h5>
+                  <span class="blue">contact:</span
+                  ><a href="tel:9340140230"> +91-9340140230</a>
+                </h5>
+                <h5>
+                  <span class="blue">email:</span>
+                  <a href="mailto:contact@aadhya.tech">contact@aadhya.tech</a>
+                </h5>
+              </span>
+            </div>
+            <div class="flex social-btns">
+              <a
+                class="app-btn blu flex vert data-tilt"
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=io.github.cynergy.dwimay_app"
+              >
+                <i class="fab fa-google-play"></i>
+                <p>
+                  Get it on <br />
+                  <span class="big-txt">Google Play</span>
+                </p>
+              </a>
+
+              <a
+                target="_blank"
+                class="app-btn blu flex vert data-tilt"
+                href="https://apps.apple.com/in/app/aadhya/id1500103678"
+              >
+                <i class="fab fa-apple"></i>
+                <p>
+                  Available on the <br />
+                  <span class="big-txt">App Store</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+
+    <!-- map -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE7CdEz0ecZz7Kn6QJ7qXarqef5ILyfjA"></script>
+    <script src="../scripts/findus.js"></script>
+
+    <!--jquery-->
+
+    <!-- lottie script -->
+    <script src="../scripts/lottie.js"></script>
+    <script src="../scripts/jquery-ui.js"></script>
+
+    <!--nav js-->
+    <script src="../scripts/nav.js"></script>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <!-- for DOM manipulation -->
+    <script src="../scripts/findus.js"></script>
+    <!-- bootstrap cdn-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+
+@font-face {
+  font-family: ig-regular;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+body {
+  font-family: "ig-regular";
+  background-color: var(--black);
+  color: var(--white);
+}
+h1 {
+  color: var(--blue);
+  font-family: "ig-bold";
+  margin: 3% 10%;
+}
+.ques-box {
+  margin: 0%;
+  padding: 2%;
+}
+
+.content {
+  width: 70%;
+  /* height: 100vh; */
+  margin: auto;
+  align-items: center;
+}
+.ques {
+  color: var(--green);
+  /* padding: 15%; */
+}
+
+/* animation */
+.animate-bot {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .content {
+    margin-bottom: 50px;
+  }
+}

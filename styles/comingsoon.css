@@ -1,0 +1,38 @@
+/* ASSINGING COLOR VARS AND FONT FAMILY */
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+@font-face {
+  font-family: ig-regular;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+* {
+  background: var(--black);
+}
+body {
+  background-color: var(--black);
+  text-align: center;
+  font-family: "ig-regular";
+  color: var(-white) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rem;
+  text-transform: lowercase;
+}
+
+* {
+  color: var(--white);
+  text-decoration: none;
+}

@@ -1,0 +1,372 @@
+/* ASSINGING COLOR VARS AND FONT FAMILY */
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --greenu: #50d890;
+  --grey: #11161a;
+}
+
+@font-face {
+  font-family: ig-regular;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+
+@font-face {
+  font-family: ig-italic;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+
+@font-face {
+  font-family: ig-bold;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black) !important;
+  font-family: "ig-regular" !important;
+  color: var(--white);
+}
+
+.imghead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(
+      90deg,
+      rgba(22, 22, 22, 0.356) 0%,
+      rgba(22, 22, 22, 0.308) 100%
+    ),
+    url("../assets/images/hackathon-img.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imghead h1 {
+  font-size: 12em;
+  color: var(--blue);
+  font-family: "ig-bold";
+}
+
+.imghead h2 {
+  font-size: 5em;
+  letter-spacing: 10px;
+  color: var(--greenu);
+  font-family: "ig-bold";
+}
+
+.imghead h3 {
+  font-size: 2em;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.imghead h4 {
+  margin-top: 1em;
+  color: var(--white);
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+.register-btn {
+  margin-top: 2em;
+  font-size: 2em;
+  transform-style: preserve-3d;
+  /* border: % solid var(--white) !important; */
+}
+
+.register-link {
+  transform: translateZ(20px);
+  border-radius: 8%;
+  padding: 0.3% 3%;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  border-style: solid;
+  border-color: transparent;
+  text-decoration: none !important;
+}
+
+.register-link:hover {
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+.green {
+  color: var(--greenu);
+}
+.offer-cont > div > h1 {
+  font-size: 3em;
+}
+.about-cont > div > h1 {
+  font-size: 3em;
+}
+
+.row > h1 {
+  color: var(--blue);
+  font-family: "ig-bold";
+  /* font-weight: bold; */
+}
+.row > div {
+  line-height: 1.5;
+  font-size: 1.5em;
+  color: var(--white);
+}
+.about-cont {
+  margin: 5% 5% !important;
+}
+
+.offer-cont {
+  background-color: var(--grey);
+  padding: 5% 5% !important;
+}
+
+.green {
+  color: var(--greenu);
+}
+.bold {
+  font-weight: bold;
+}
+.why-section {
+  margin-bottom: 8%;
+  width: 100%;
+}
+.why-heading {
+  margin: 5%;
+  font-family: "ig-bold";
+  font-size: 4em;
+}
+.why-img {
+  width: 40%;
+  height: auto;
+}
+.why-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.why-col > h4 {
+  color: var(--greenu);
+  font-weight: bold;
+  font-size: 1em;
+}
+.why-col,
+.prize-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-col > img {
+  margin-bottom: 6%;
+}
+
+.tracks-section {
+  /* margin: 5%; */
+  background-color: var(--black);
+}
+
+.tracks-heading {
+  margin-top: 4%;
+  font-size: 4em;
+  color: var(--blue);
+  font-family: "ig-bold";
+  margin: 8% auto 0 8%;
+}
+.tracks-subtitle {
+  margin-left: 8%;
+  color: var(--white);
+}
+.tracks-img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 6px;
+}
+.tracks-row {
+  text-align: center;
+  padding: 2%;
+}
+.tracks-row > div > h2 {
+  color: var(--greenu);
+  margin-bottom: 3em;
+}
+/* modal */
+.modal {
+  color: var(--white);
+}
+.modal-content {
+  border: none !important;
+}
+.modal-header {
+  color: var(--greenu);
+  font-family: "ig-bold";
+  border: none !important;
+  background-color: var(--grey);
+}
+.modal-body {
+  border: none !important;
+  background-color: var(--grey);
+  text-align: center;
+}
+.modal-body > p {
+  text-align: justify;
+}
+.modal .tracks-img {
+  margin-bottom: 5%;
+  width: 15em;
+  height: auto;
+}
+.modal-footer {
+  border: none !important;
+  background-color: var(--grey);
+}
+.close-btn {
+  background-color: var(--greenu) !important;
+}
+.close-btn:hover {
+  background-color: var(--white) !important;
+}
+
+/* prize */
+.prize-img {
+  margin: 3%;
+  width: 25%;
+  height: auto;
+}
+.prize-col > img {
+  margin-bottom: 5%;
+}
+.prize-section {
+  margin-bottom: 10%;
+  /* width: 98%; */
+  background: var(--grey);
+}
+.prize-heading {
+  margin: 8%;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  font-size: 4em;
+}
+.prize-col > h3 {
+  padding: 2% 7%;
+  font-size: 1em;
+  border-radius: 7%;
+}
+.prize-col > h4 > sub {
+  font-size: 1.5em;
+}
+.prize-col > h4 > span {
+  font-size: 2.2em;
+  font-family: "ig-bold";
+}
+
+.prize-col {
+  margin-bottom: 3em;
+}
+.first-prize {
+  background-color: #f9c539;
+}
+.second-prize {
+  background-color: #a3aaae;
+}
+.third-prize {
+  background-color: #c38944;
+}
+
+@media (max-width: 991.98px) {
+  .imghead > div > h1 {
+    font-size: 3.2em;
+  }
+  .imghead > div > h2 {
+    font-size: 1.8em;
+    font-family: "ig-bold";
+  }
+  .imghead > div > h3 {
+    font-size: 1em;
+  }
+  .register-btn {
+    margin-top: 10%;
+    font-size: 1em;
+  }
+  .register-link {
+    padding: 2% 3%;
+    font-size: 2em;
+  }
+  .about-cont > div > h1 {
+    font-size: calc(2rem + 3.3vw);
+    margin-bottom: 5% !important;
+  }
+
+  .offer-cont {
+    padding: 10% !important;
+  }
+  .offer-cont > div > h1 {
+    margin: 5% auto 0 auto;
+    text-align: center;
+    font-size: calc(2rem + 3.3vw);
+    margin-bottom: 5% !important;
+  }
+  .why-heading {
+    margin: 5% auto 0 auto;
+    text-align: center;
+    font-size: calc(2rem + 3.3vw);
+  }
+  .why-col {
+    padding: 8%;
+  }
+  .track-details > div {
+    flex-direction: column;
+  }
+  .track-details > div > p {
+    order: 2;
+    /* width: 98%; */
+  }
+  .tracks-img {
+    width: 6em;
+    height: auto;
+  }
+
+  .modal .tracks-img {
+    width: 60%;
+    height: auto;
+  }
+  .tracks-heading {
+    font-size: calc(2rem + 3.3vw);
+    text-align: center;
+  }
+  .track-content {
+    margin: 7% 3%;
+  }
+  .prize-section {
+    width: 100%;
+  }
+  .prize-heading {
+    margin: 5% auto 0 auto;
+    text-align: center;
+    font-size: calc(1.525rem + 3.3vw);
+  }
+  .prize-col {
+    margin: 7%;
+    text-align: center;
+  }
+  .about-cont > div > h1 {
+    margin: 5% auto 0 auto;
+    text-align: center;
+  }
+}

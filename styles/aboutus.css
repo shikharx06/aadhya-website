@@ -1,0 +1,106 @@
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+
+@font-face {
+  font-family: ig-regular;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  font-family: "ig-regular";
+  background-color: var(--black);
+  color: var(--white);
+}
+.green {
+  color: var(--green);
+}
+.bold {
+  font-weight: bold;
+}
+h1 {
+  color: var(--blue);
+  font-weight: bold;
+  font-family: "ig-bold";
+  margin: 5% auto 3% auto;
+}
+p {
+  line-height: 2;
+  font-size: large;
+}
+.about-page {
+  margin: 10% auto;
+}
+.tech-partner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.cynergy-logo {
+  width: 30%;
+  height: auto;
+  margin: 4%;
+}
+@media (max-width: 991.98px) {
+  p {
+    line-height: 1.2;
+    margin-bottom: 70px;
+  }
+  body {
+    width: 80%;
+  }
+  .tech-partner {
+    font-size: small;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .cynergy-logo {
+    width: 60%;
+  }
+}
+.animate-bot {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}

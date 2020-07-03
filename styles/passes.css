@@ -1,0 +1,75 @@
+:root {
+    --black: #070507;
+    --white: #e5e5e5;
+    --blue: #1089ff;
+    --green: #50d890;
+  }
+  
+  @font-face {
+    font-family: ig-regular;
+    src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+  }
+  @font-face {
+    font-family: ig-italic;
+    src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+  }
+  @font-face {
+    font-family: ig-bold;
+    src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  }
+
+
+  body::-webkit-scrollbar {
+    display: none;
+  }  
+.pass-img {
+  width: 70%;
+  height: auto;
+  margin: 2%;
+  border: 2px white;
+}
+h1 {
+  margin: 5% auto 0 5%;
+  font-family: "ig-bold";
+  color: var(--blue);
+  font-weight: bold;
+}
+.passes-images{
+text-align: center;
+margin-top: 2%;
+margin-bottom: 10%;
+}
+body{
+  background-color: var(--black);
+
+}
+
+
+img {
+
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  transition: filter .5s ease-in-out;
+ 
+}
+img:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+@media (max-width: 991.98px) {
+.pass-img{
+  width: 95%;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+.passes-images{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+
+}
+
+
+

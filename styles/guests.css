@@ -1,0 +1,112 @@
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+
+@font-face {
+  font-family: ig-regular;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "ig-regular";
+  background-color: var(--black);
+  color: var(--white);
+}
+h1 {
+  color: var(--blue);
+  font-family: "ig-bold";
+  margin: 3% 10%;
+}
+.guest-box {
+  margin: 0 auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+.content {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+}
+.developer-team {
+  margin-bottom: 5em;
+}
+
+.guest-name {
+  padding-top: 10px;
+  color: var(--white);
+  margin: 0;
+  /* padding: auto; */
+}
+
+/* animation */
+.animate-bot {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .guest-name {
+    font-size: 1em;
+  }
+  .col {
+    max-width: 140px;
+    min-width: 130px;
+  }
+  .guest-box > p {
+    font-size: 1em;
+  }
+}
